@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sri Lanka</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+    
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="index.html" class="logo"><img src="Images/logo.png" alt="logo"></a>
+    
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="destinations.html">Destination</a>
+        <a href="activities.html">Activities</a>
+        <a href="beaches.html">Beaches</a>
+        <a href="nature&wildlife.html">Nature & Wildlife</a>
+        <a href="heritages.html">Heritages</a>
+        <a href="purchase&donate.html">Purchase & Donate</a>
+      
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+       
+    <div class = "cart-container">
+        <div class = "cart-list">
+          
+        </div>
+
+        <div class = "cart-total">
+          <h3>Total: $</h3>
+          <span id = "cart-total-value"></span>
+        </div>
+      </div>
+    </div>
+
+    <form action="aaa" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="aaa">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Purchase & Donate</h3>
+    </div>
+
+    <div class="video-container">
+        <video src="video6/vid-11.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+
+<section class="book" id="book">
+
+    <section class="dis">
+        <h1 class="dada">Help preserve Heritages & Wildlife In SriLanka</h1>
+        <p class="dadap">Mission Statement will spark a sustainable tourism renaissance on Sri Lanka by establishing this island community as one of the leading Heritage and Nature Tourism destinations in the world. Purpose SriLankan Heritage and Nature Tourism,is organized exclusively for charitable, educational and community development related purposes. These purposes include but are not limited to: The development of local nature and heritage tourism product providers, The creation and promotion of nature and heritage provider resources using the most recent technologies that will market and reserve the services of local tour providers, The creation of educational outreach programs for schools and the public and Heritage History and the island's environmental systems.</p>
+    </section>
+
+
+    <h1 class="heading">
+        <span>d</span>
+        <span>o</span>
+        <span>n</span>
+        <span>a</span>
+        <span>t</span>
+        <span>e</span>
+        
+    </h1>  
+      
+    <div class="row">
+        
+        <div class="image">
+            <img src="Images1/i-love-sri-lanka-4k-wooden-carving-hands-day-of-sri-lanka-sri-lankan-flag.jpg" alt="">
+        </div>
+        
+        <form action="aaa" class="container">
+
+            <h2>Donations</h2>
+        
+              <fieldset>
+        
+                <legend> <b>Donation amount</b></legend>
+                <p>
+                    <label for="amount"></label>
+                    <input type="radio" name="amount" id="amount1" value="100" >100 LKR
+                  </p>
+          
+                  <p>
+                    <input type="radio" name="amount" id="amount2" value="250">250 LKR
+                  </p>
+                <p>
+                  <input type="radio" name="amount" id="amount3" value="500">500 LKR
+                </p>  
+        
+                <p>
+                <input type="radio" name="amount" id="amount4" value="1000">1000 LKR  
+                </p>   
+        
+                <p>
+                <input type="radio" name="amount" id="amount5" value="2500">2500 LKR
+                </p>    
+        
+                <p>
+                <input type="radio" name="amount" id="amount6" value="5000">5000 LKR
+                </p>   
+        
+                <p>
+                <input type="radio" name="amount" id="amount7" value="10000">10,000 LKR
+                </p> 
+
+               
+        
+              </fieldset>
+        
+             <br> <label for="name"><b>Cardholder's Name</b></label>
+              <input type="text"  name="name" id="name" required><br><br>
+              
+              <label for="no"><b>Card Number</b></label>
+              <input type="text" placeholder="8081 - XXXX - XXXX - XXXX" name="no" id="no" required maxlength="16">
+        
+              <br><br><label for="email"><b>Email</b></label>
+              <input type="text" name="email" id="email12" required>
+        
+              <label for="exp"><b>Valid Through</b></label>
+              <input type="text" placeholder="MM/YY" name="exp" id="exp" min="08-22" maxlength="5" minlength="5" required>
+        
+              <br><label for="cvc"><b>CVV</b></label>
+              <input type="password" pattern="^[0-9]{3}$" name="cvc" id="cvc" maxlength="3" minlength="3" required>
+             
+              <button type onclick="myFunction()" id="submit" name="submit" class="btn">Donate</button>
+             
+            </form>
+        
+    </div>
+</section>
+
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>u</span>
+        <span>r</span>
+        <span>c</span>
+        <span>h</span>
+        <span>a</span>
+        <span>s</span>
+        <span>e</span>
+    </h1>    
+
+    
+
+<section class="book" id="book1">
+
+    <section class="gallery" id="gallery">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="Images1/gem.jpg" alt="">
+                <div class="content">
+                    <h3>Gems</h3>
+                    <p>Sri Lanka, a gem-mining nation with an outstanding portfolio of excavated gems, is known as the Gem Island for this reason.</p>
+                    
+                    <a href="#" class="btn">Purchase now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images2/porci.jpg" alt="">
+                <div class="content">
+                    <h3> Porcelain Tableware</h3>
+                    <p>Sri Lanka produces beautiful porcelain and ceramic ware thanks to its abundance of minerals and clay.</p>
+                    
+                    <a href="#" class="btn">Purchase now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images1/buddha-statue.webp" alt="">
+                <div class="content">
+                    <h3>Buddha Figurines</h3>
+                    <p>Sri Lankans are known for creating beautiful figurines out of wood, stone, and ebony.</p>
+                    <a href="#" class="btn">Purchase now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images1/tea.jpg" alt="">
+                <div class="content">
+                    <h3>Ceylon Tea</h3>
+                    <p>Ceylon tea is the island nation’s lifeblood, with tea boutiques spread all over. A variety of teas flavoured with cinnamon, dried fruits, herbal blends, and local spices are available as infusions. </p>
+                    
+                    <a href="#" class="btn">purchase now</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="Images1/mask.jpg" alt="">
+                <div class="content">
+                    <h3>Traditional Masks</h3>
+                    <p>The important aspect of Sri Lankan folklore and a vivid part of the island’s cultural identity.Popular devil masks, which were once only seen in folk dances, have now evolved into magnificent works of art. </p>
+                    <a href="#" class="btn">purchase now</a>
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="Images1/antique.jpg" alt="">
+                <div class="content">
+                    <h3>Antiques</h3>
+                    <p>Sri Lanka’s huge antique offering, which is almost as large as those selling jewels, provides a plethora of options for collectors of vintage pieces. There are a lot of old trinkets, dainty hats, candle stands, metal wall art, and pots and pans here.</p>
+                    
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+        </div>    
+        
+    </section>
+</section>       
+
+
+<section class="container content-section">
+    <h2 class="section-header">Arts and crafts </h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Naga Raksha Mask</span>
+            <img class="shop-item-image" src="images2/mask.webp" alt="mask">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$12.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Lacquer work (Laksha) pot set</span>
+            <img class="shop-item-image" src="images2/laksha.jpg" alt="laksha">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$14.99</span>
+                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Hand-made Cane Box</span>
+            <img class="shop-item-image" src="images2/Cane-box-5.jpg" alt="cane">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$9.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Coconut Shell Bicycle</span>
+            <img class="shop-item-image" src="images2/Coconut-shell-Bicycle-model2-300x300.jpg" alt="bicycle">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">MERCH</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">T-Shirt</span>
+            <img class="shop-item-image" src="images2/merch.jpg" alt="merch">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Coffee Cup</span>
+            <img class="shop-item-image" src="images2/mug1.jpg" alt="mug">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$6.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
+
+   
+  <div class="checkout">
+  <div class="panel">
+
+      <h2 class="title">Payment</h2>
+   
+      <div class="input-fields">
+
+        <label for="cardholder">Cardholder's Name</label>
+        <input type="text" id="cardholder" name="cardholder">
+
+        <label for="email">Email</label>
+        <input type="text" id="email1" name="email1">
+
+        <label for="cardnumber">Card Number</label>
+        <input type="text" placeholder="8081 - XXXX - XXXX - XXXX" id="cardnumber" name="cardnumber" maxlength="16">
+        <span class="info"></span>
+   
+        <label for="date">Valid Through</label>
+        <input type="text" id="date" name="date" placeholder="MM / YY" min="08-22" maxlength="5" minlength="5" required>
+  
+        <label for="verification">CVV</label>
+        <input type="password" id="verification" name="verification" pattern="^[0-9]{3}$" maxlength="3" minlength="3" required><br>
+    
+        <label for = "delivery"> Method of Delivery </label>
+        <p>
+        <input type="radio" name="delivery" id="delivery1" value="Online Delivery"> Online Delivery
+        </p>
+
+        <p>
+        <input type="radio" name="delivery" id="delivery2" value="Pick Up"> Pick Up
+        </p>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" >
+        &nbsp;&nbsp;
+      <button type onclick ="myFunctiona()" id="submit1" name="submit1" class="btn">Pay Now</button>
+
+  <hr><hr>
+  </div>
+  </div>
+  </div>
+  <br><br>
+
+
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Plan the journey of a thousand miles within your fingertips. Age is not a barrier when it comes to travel with Visit Sri Lanka since we have hundreds of travelling plans. So come, color your dream of visiting Sri Lanka with VISIT SRILANKA.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">Colombo</a>
+            <a href="#">Kandy</a>
+            <a href="#">Jaffana</a>
+            <a href="#">Dambulla</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="destinations.html">destinations</a>
+            <a href="activities.html">activities</a>
+            <a href="beaches.html">Beaches</a>
+            <a href="nature&wildlife.html">Nature & Wildlife</a>
+            <a href="heritages.html">Heritages</a>
+            <a href="purchase&donate.html">Purchase & Donate</a>
+           
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit">copyright 2022 | all rights reserved! </h1>
+
+</section>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+<script src="store.js" async></script>
+</body>
+</html>
